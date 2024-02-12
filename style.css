@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  background-image: url(library2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  }
+
+.card-body {
+  background: hsl(0 0% 0% / 0.1);
+  backdrop-filter: blur(1rem);
+}

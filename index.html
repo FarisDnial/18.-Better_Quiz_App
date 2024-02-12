@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Quiz App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  
+  <!-- Header -->
+  <!-- <header class="text-center py-5 text-white">
+    <h1>Quiz App</h1>
+    <p>Quiz with a random question</p>
+  </header> -->
+  
+  <!-- Question section -->
+  <section id="questions" class="container mt-5">
+    <h1 class="text-center text-white">Quiz App</h1>
+    
+    <h4 class="text-center mb-5 text-white">Let's test your knowledge!</h4>
+    <div class="container text-left">
+      
+      <!-- First row question -->
+      <div class="row">
+        
+        <!-- question 1 -->
+        <div class="col-md-6">
+          <div class="card border-1 bg-transparent mb-4">
+            <img src="paris_flag.jpg" class="card-img-top" alt="Paris" height="290">
+            <div class="card-body text-white">
+              <h5>Question 1</h5>
+              <p>What are the capital of France?</p>
+              
+              <!-- first answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1" id="optionRome" value="rome">
+                <label class="form-check-label" for="q1a">
+                  Rome
+                </label>
+              </div>
+              
+              <!-- second answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1" id="optionLondon" value="london">
+                <label class="form-check-label" for="q1b">
+                  London
+                </label>
+              </div>
+
+              <!-- third answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1" id="correctQ1" value="paris">
+                <label class="form-check-label" for="q1c">
+                  Paris
+                </label>
+              </div>
+
+              <!-- fourth answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1" id="optionBerlin" value="berlin">
+                <label class="form-check-label" for="q1d">
+                  Berlin
+                </label>
+              </div>
+              
+              <div>
+                 <div id="question1"></div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+        <!-- question 2 -->
+        <div class="col-md-6">
+          <div class="card border-1 bg-transparent mb-4">
+            <img src="red_planet.jpg" class="card-img-top" alt="Red Planet" height="290">
+            <div class="card-body text-white">
+              <h5>Question 2</h5>
+              <p>Which planet is known as the "Red Planet"?</p>
+
+              <!-- first answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q2" id="optionVenus" value="venus">
+                <label class="form-check-label" for="q2a">
+                  Venus
+                </label>
+              </div>
+
+              <!-- second answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q2" id="correctQ2" value="mars">
+                <label class="form-check-label" for="q2b">
+                  Mars
+                </label>
+              </div>
+
+              <!-- third answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q2" id="optionJupiter" value="jupiter">
+                <label class="form-check-label" for="q2c">
+                  Jupiter
+                </label>
+              </div>
+
+              <!-- fourth answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q2" id="optionSaturn" value="saturn">
+                <label class="form-check-label" for="q2d">
+                  Saturn
+                </label>
+              </div>
+
+              <div>
+                 <div id="question2"></div>
+              </div>
+              
+            </div>
+          </div>
+        </div> 
+      </div>
+      <!-- end of row 1 -->
+
+      <!-- Second row question -->
+      <div class="row">
+
+        <!-- question 3 -->
+        <div class="col-md-6">
+          <div class="card border-1 bg-transparent mb-4">
+            <img src="water.jpg" class="card-img-top" alt="water" height="290">
+            <div class="card-body text-white">
+              <h5>Question 3</h5>
+              <p>What is the chemical symbol for water?</p>
+
+              <!-- first answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q3" id="correctQ3" value="h2o">
+                <label class="form-check-label" for="q3a">
+                  H2O
+                </label>
+              </div>
+
+              <!-- second answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q3" id="optionCo2" value="co2">
+                <label class="form-check-label" for="q3b">
+                  CO2
+                </label>
+              </div>
+
+              <!-- third answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q3" id="optionNaci" value="naci">
+                <label class="form-check-label" for="q3c">
+                  NACI
+                </label>
+              </div>
+
+              <!-- fourth answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q3" id="optionCh4" value="ch4">
+                <label class="form-check-label" for="q3d">
+                  CH4
+                </label>
+              </div>
+
+              <div>
+                 <div id="question3"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- question 4 -->
+        <div class="col-md-6">
+          <div class="card border-1 bg-transparent mb-4">
+            <img src="romeo_juliet.jpg" class="card-img-top" alt="romeojuliet" height="290">
+            <div class="card-body text-white">
+              <h5>Question 4</h5>
+              <p>Who wrote the play "Romeo and Juliet"?</p>
+
+              <!-- first answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q4" id="correctQ4" value="williamShakespeare">
+                <label class="form-check-label" for="q4a">
+                  William Shakespeare
+                </label>
+              </div>
+
+              <!-- second answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q4" id="optionJane" value="janeAusten">
+                <label class="form-check-label" for="q4b">
+                  Jane Austen
+                </label>
+              </div>
+
+              <!-- third answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q4" id="optionCharles" value="charlesDickes">
+                <label class="form-check-label" for="q4c">
+                  Charles Dickens
+                </label>
+              </div>
+
+              <!-- fourth answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q4" id="optionMark" value="markTwain">
+                <label class="form-check-label" for="q4d">
+                  Mark Twain
+                </label>
+              </div>
+
+              <div>
+                 <div id="question4"></div>
+              </div>
+
+            </div>
+          </div>
+        </div> 
+      </div>
+      <!-- end of row 2 -->
+
+      <!-- third row question -->
+      <div class="row">
+
+        <!-- question 5 -->
+        <div class="col-md-6">
+          <div class="card border-1 bg-transparent mb-4">
+            <img src="mamals.png" class="card-img-top" alt="mamals" height="290">
+            <div class="card-body text-white">
+              <h5>Question 5</h5>
+              <p>What is the largest mammal in the world?</p>
+
+              <!-- first answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q5" id="correctQ5" value="elephant">
+                <label class="form-check-label" for="q5a">
+                  Elephant
+                </label>
+              </div>
+
+              <!-- second answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q5" id="optionGiraffe" value="giraffe">
+                <label class="form-check-label" for="q5b">
+                  Giraffe
+                </label>
+              </div>
+
+              <!-- third answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q5" id="optionBlueWhale" value="blueWhale">
+                <label class="form-check-label" for="q5c">
+                  Blue Whale
+                </label>
+              </div>
+
+              <!-- fourth answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q5" id="optionLion" value="lion">
+                <label class="form-check-label" for="q5d">
+                  Lion
+                </label>
+              </div>
+
+              <div>
+                 <div id="question5"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- question 6 -->
+        <div class="col-md-6">
+          <div class="card border-1 bg-transparent mb-4">
+            <img src="continent.jpeg" class="card-img-top" alt="continet" height="290">
+            <div class="card-body text-white">
+              <h5>Question 6</h5>
+              <p>How many continents are there in the world?</p>
+
+              <!-- first answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q6" id="optionFour" value="four">
+                <label class="form-check-label" for="q6a">
+                  Four
+                </label>
+              </div>
+
+              <!-- second answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q6" id="optionSix" value="six">
+                <label class="form-check-label" for="q6b">
+                  Six
+                </label>
+              </div>
+
+              <!-- third answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q6" id="correctQ6" value="seven">
+                <label class="form-check-label" for="q6c">
+                  Seven
+                </label>
+              </div>
+
+              <!-- fourth answer option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q6" id="optionFive" value="five">
+                <label class="form-check-label" for="q6d">
+                  Five
+                </label>
+              </div>
+
+              <div>
+                 <div id="question6"></div>
+              </div>
+
+            </div>
+          </div>
+        </div> 
+      </div>
+      <!-- end of row 3 -->
+      
+      
+    </div>
+  </section>
+  <br>
+  <p id="result" class="text-center fw-bold bg-dark"></p>
+  <p id="custom" class="text-center fw-bold bg-dark"></p>
+
+  <button id="checkAnswer" class="btn btn-warning" onclick="checkAnswers()">Check Answer</button>
+  <br>
+  <button id="reset" class="btn btn-warning" onclick= "reset()">Reset</button>
+  <script src="script.js"></script>
+  <br>
+
+  <!-- footer -->
+  <footer class="text-white text-center py-3">
+    <p>&copy; 2024 Faris Danial. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
